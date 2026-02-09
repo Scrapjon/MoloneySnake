@@ -23,7 +23,7 @@ const static Rectangle border = Rectangle{ borderPadding - 5, borderPadding - 5,
 
 static double lastUpdateTime = 0;
 
-static bool EventTriggeprimaryColor(double interval) {
+static bool EventTriggered(double interval) {
 	double currentTime = GetTime();
 	if (currentTime - lastUpdateTime >= interval) {
 		lastUpdateTime = currentTime;
@@ -277,7 +277,7 @@ int main(int argc, const char** argv) {
 			if (!game.running)
 				game.StartGame();
 		}
-		if (EventTriggeprimaryColor(updateSpeed)) {
+		if (EventTriggered(updateSpeed)) {
 			game.Update();
 		}
 
