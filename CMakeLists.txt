@@ -30,7 +30,7 @@ FetchContent_MakeAvailable(raylib)
 
 
 # Add source to this project's executable.
-add_executable (MoloneySnake "src/MoloneySnake.cpp")
+add_executable (MoloneySnake "src/MoloneySnake.cpp" "src/Game.cpp" "include/Snake.h" "include/Food.h" "include/Globals.h" "src/Game.cpp" "src/Food.cpp"  "src/Snake.cpp")
 
 target_link_libraries(${PROJECT_NAME} raylib)
 include_directories("include")
