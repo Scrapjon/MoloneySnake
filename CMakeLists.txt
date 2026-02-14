@@ -15,7 +15,7 @@ endif()
 
 project ("MoloneySnake")
 
-set(RAYLIB_VERSION 4.5.0)
+set(RAYLIB_VERSION 5.5)
 
 FetchContent_Declare(
 	raylib
